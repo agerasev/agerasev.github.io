@@ -4,10 +4,7 @@ title:  "Clay: Ray tracer in Rust and OpenCL"
 date:   2019-09-23 15:16:00 +0700
 ---
 
-## About
-{:.no_toc}
-
-This post is about my attempt to write a small Monte-Carlo ray tracer in Rust and OpenCL. It is aimed to be a convenient framework for toy experiments with ray tracing, so the main goals was modularity and extendability, and also performance were taken into account. Here is the [main page of the project](https://clay-rs.github.io).
+This post is about my attempt to write a simple Monte-Carlo ray tracer in Rust and OpenCL. It is aimed to be a convenient framework for toy experiments with ray tracing, so the main goals was modularity and extendability, and also performance was taken into account. Here is the [main page of the project](https://clay-rs.github.io).
 
 ## Table of content
 {:.no_toc}
@@ -17,7 +14,7 @@ This post is about my attempt to write a small Monte-Carlo ray tracer in Rust an
 
 ## Preface
 
-I like computer graphics and especially ray tracing because being based only on a few physical rules it is able to produce beautiful images. Sometimes to draw a pretty image of some data or check some new idea it is necessary to implement a simple ray tracer which requires a lot of boilerplate code. Instead of implementing this code every time it would be nice to use some flexible ray tracing framework.
+I like computer graphics and especially ray tracing because being based only on a few physics rules it is able to produce beautiful images. Sometimes to draw a pretty image of some data or check some new idea it is necessary to implement a ray tracer which requires a lot of boilerplate code. Instead of implementing this code every time it would be nice to use some simple but flexible ray tracing framework.
 
 ### Existing solutions
 
