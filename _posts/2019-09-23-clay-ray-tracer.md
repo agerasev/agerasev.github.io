@@ -7,7 +7,7 @@ date:   2019-09-23 15:16:00 +0700
 ## About
 {:.no_toc}
 
-This post is about my attempt to write a small Monte-Carlo ray tracer in Rust and OpenCL. It is aimed to be a convenient framework for toy experiments with ray tracing, so the main goals was modularity and extendability, and also performance were taken into account.
+This post is about my attempt to write a small Monte-Carlo ray tracer in Rust and OpenCL. It is aimed to be a convenient framework for toy experiments with ray tracing, so the main goals was modularity and extendability, and also performance were taken into account. Here is the [main page of the project](https://clay-rs.github.io).
 
 ## Table of content
 {:.no_toc}
@@ -52,6 +52,58 @@ The project lives on Github in [Clay-rs](https://github.com/clay-rs) organizatio
 For now the minimal skeleton of the project is almost complete, but it could be changed and extended in future releases. And there are only very limited set of implementations of shapes, materials, etc. for the moment, but it should and will be extended in future.
 
 There are also a small set of examples to demonstrating current capabilities of the engine. You can find them [here](https://clay-rs.github.io/usage/#examples).
+
+### Rendered images
+
+Some objects illuminated by two light sources:
+
+![](https://clay-rs.github.io/gallery/posts/001/scene.jpg)
+
+### Logarithmic correction
+{:.no_toc}
+
+Some scenes could contain places with very different illumination levels. To draw both very dark and very bright objects on the same image it is reasonable to use logarithmic scale.
+
+Linear scale:
+![](https://clay-rs.github.io/gallery/posts/001/log_filter/without.jpg)
+
+Logarithmic scale:
+![](https://clay-rs.github.io/gallery/posts/001/log_filter/with.jpg)
+
+Also note that wide logarithmic range cause colors to become gray and you may need to increase color contrast in such case.
+
+### Global illumination
+{:.no_toc}
+
+One of the main advantages of ray tracing is the ability to account diffused light so objects could be illuminated not only directly by light source but also by secondary rays from other illuminated objects.
+
+![](https://clay-rs.github.io/gallery/posts/001/room_01.jpg)
+
+![](https://clay-rs.github.io/gallery/posts/001/room_02.jpg)
+
+Note that these images are rendered without logarithmic correction to show difference in brightness more clearly.
+
+### Statistics accumulation
+{:.no_toc}
+
+If you draw static scene and don't move the camera the Monte-Carlo statistics will be accumulated gradually increasing the image quality.
+
+200 milliseconds of rendering:
+![](https://clay-rs.github.io/gallery/posts/001/progress/01.jpg)
+
+2 seconds:
+![](https://clay-rs.github.io/gallery/posts/001/progress/02.jpg)
+
+20 seconds:
+![](https://clay-rs.github.io/gallery/posts/001/progress/03.jpg)
+
+3 minutes 20 seconds:
+![](https://clay-rs.github.io/gallery/posts/001/progress/04.jpg)
+
+About 30 minutes:
+![](https://clay-rs.github.io/gallery/posts/001/progress/05.jpg)
+
+These images are rendered on GeForce GTX 970, times could differ for different hardware.
 
 ### Benchmarking
 
