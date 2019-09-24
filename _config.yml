@@ -16,9 +16,9 @@
 title: Alexey Gerasev
 email: alexey.gerasev@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Alexey Gerasev.
+  My personal page.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://agerasev.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: alexey_gerasev
 github_username:  agerasev
 
