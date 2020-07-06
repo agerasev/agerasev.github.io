@@ -4,4 +4,4 @@ _site
 .bundle
 /vendor
 
-/_layouts
+*.code-workspace
