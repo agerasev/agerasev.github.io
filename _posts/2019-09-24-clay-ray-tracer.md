@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Simple ray tracer in Rust and OpenCL"
-image: /assets/clay-ray-tracer.png
+title:  "Ray tracer in Rust and OpenCL"
+image:  /assets/posts/clay-ray-tracer/preview.png
 date:   2019-09-24 16:00:00 +0700
 ---
 
