@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Back to 2013 - simple 3D vehicle physics simulator"
-image:  /assets/posts/akadem/preview.png
+image:  /assets/posts/vehicle-physics/preview.png
 date:   2013-02-15 05:34:50 +0800
 ---
 
@@ -37,7 +37,7 @@ The wheels themselves have no mass and geometry. They are simply positioned unde
 
 Mitsubishi L200 model is used as vehicle model. The texture was made from images taken from official Mitsubishi website, the 3D shape was created in custom 3D editor (included in source as `3d-editor`).
 
-![Custom 3D editor]({{ "/assets/posts/akadem/3d-builder.png" | relative_path }})
+![Custom 3D editor]({{ "/assets/posts/vehicle-physics/3d-builder.png" | relative_path }})
 *3D editor screenshot*
 
 Terrain has a shape of a square patch of a surface defined by the following equation:
