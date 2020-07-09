@@ -5,7 +5,7 @@
 layout: home
 image: /assets/me.jpg
 photo: /assets/me.jpg
-list_title: Posts
+list_title: "Projects"
 ---
 
 ![Alexey Gerasev]({{ "/assets/me.jpg" | relative_path }}){: style="width: 200px; height: 200px; float: left; margin-right: 10px; margin-bottom: 10px;"}
