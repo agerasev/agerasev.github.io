@@ -1,2 +1,25 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+.custom-post-card {
+    padding: $spacing-unit/4;
+    background-color: #FFFFFF;
+    box-shadow: 0px $spacing-unit/8 $spacing-unit/2 rgba($color: #000000, $alpha: 0.4);
+}
+
+.custom-post-info {
+    overflow: hidden;
+}
+
+.custom-post-image {
+    width: 175px;
+    float: left;
+    margin: $spacing-unit/8 $spacing-unit/3 $spacing-unit/8 0;
+}
+
+.custom-photo {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 0 $spacing-unit/4 $spacing-unit/4 0;
+}

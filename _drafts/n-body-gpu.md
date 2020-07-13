@@ -1,7 +1,6 @@
 ---
 layout: post
-title:  "Translating LLVM-IR to OpenCL C"
-image: /assets/posts/llvm-opencl/preview.png
+title:  "N-body simulation with OpenCL"
 date:   2020-04-14 13:54:10 +0700
 categories: jekyll update
 ---

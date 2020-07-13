@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Back to 2013 - simple 3D vehicle physics simulator"
+title:  "Simple 3D vehicle physics simulator"
 image:  /assets/posts/vehicle-physics/preview.png
 date:   2013-02-15 05:34:50 +0800
 ---
 
-This is my attempt to work with 3D graphics and physics. I worked on this project in the winter between 2012 and 2013. This was my first year in Novosibirsk State University. I studied calculus, linear algebra and mechanics, and I tried to apply some new knowledge I learnt. I already tried to learn C++ and OpenGL by myself.
+I worked on this toy project in the winter between 2012 and 2013. This was my first year in Novosibirsk State University. I studied calculus, linear algebra and mechanics, and I tried to apply some new knowledge I learnt. I already tried to learn C++ and OpenGL by myself.
 
 ## Video
 

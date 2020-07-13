@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Lobachevsky (hyperbolic) space ray tracer"
-image: /assets/hypertrace.png
+image: /assets/posts/hypertrace/preview.png
 date:   2020-04-14 13:54:10 +0700
 categories: jekyll update
 ---

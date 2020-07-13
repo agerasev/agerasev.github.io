@@ -5,10 +5,10 @@
 layout: home
 image: /assets/me.jpg
 photo: /assets/me.jpg
-list_title: "Projects"
+list_title: "My projects"
 ---
 
-![Alexey Gerasev]({{ "/assets/me.jpg" | relative_path }}){: style="width: 200px; height: 200px; float: left; margin-right: 10px; margin-bottom: 10px;"}
+![Alexey Gerasev]({{ page.photo | relative_path }}){: class="custom-photo"}
 
 My name is Alexey Gerasev, I live in Novosibirsk, Russia.
 

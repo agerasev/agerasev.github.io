@@ -23,7 +23,8 @@ description: > # this means to ignore newlines until "show_excerpts:"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://agerasev.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-show_excerpts: false # set to true to show excerpts on the homepage
+show_excerpts: true # set to true to show excerpts on the homepage
+show_images: true # set to true to show post preview image on the homepage
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
