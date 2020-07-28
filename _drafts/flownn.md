@@ -1,15 +1,15 @@
 ---
 layout: post
 title:  "Viscous fluid flow prediction with U-Net"
+image:  /assets/posts/flownn/preview.png
 date:   2018-06-01 16:44:00 +0700
-categories: jekyll update
 ---
 
-This is my attempt to use deep learning techniques for realistic simulation of viscous fluid flow.
+This is my attempt to use deep learning techniques for realistic simulation of viscous fluid flow. [Here](https://github.com/agerasev/flownn) you can find the source code and notebooks.
 
 {% include youtube_player.html id="4N-s4f00J6s" %}
 
-*Numerical solution is on the left side.* \| *U-Net prediction is on the right side.*
+| *Left side:* Numerical solution | *Right side:* U-Net prediction |
 
 ## Simulation
 
