@@ -13,7 +13,7 @@ The approach was inspired by the [Game of Life on Lobachevsky plane](https://hab
 
 The position in 3-dimensional Lobachevsky space is represented by a [quaternion](https://en.wikipedia.org/wiki/Quaternion) of form:
 
-$$ \vec{p} = x + iy + jz $$
+$$ \mathbf{p} = x + iy + jz $$
 
 where $$x$$, $$y$$ and $$z$$ are coordinates in [Poincaré half-space model](https://en.wikipedia.org/wiki/Poincar%C3%A9_half-plane_model) with $$ z > 0 $$.
 
@@ -23,7 +23,7 @@ The point of origin in such representation is $$j$$.
 
 #### Requirements
 
-In Lobachevsky space we have only 2 kinds of similarity transformations: shift and rotation (aand their combination). To implement them we need at least 3 following basic transformations:
+In Lobachevsky space we have only 2 kinds of similarity transformations: shift and rotation (and their combination). To implement them we need at least 3 following basic transformations:
 
 1. Shift along $$z$$-axis.
 2. Rotation around $$z$$-axis.
@@ -35,19 +35,19 @@ In Poincaré half-space model shift along $$z$$-axis is simply a scaling; and ro
 
 Required transformations could be represented by the subset of quaternionic [Möbius transformations](https://en.wikipedia.org/wiki/M%C3%B6bius_transformation):
 
-$$ f(\vec{q}) = (a \vec{q} + b)(c \vec{q} + d)^{-1} $$
+$$ f(\mathbf{q}) = (a \mathbf{q} + b)(c \mathbf{q} + d)^{-1} $$
 
-where $$\vec{q}$$ is a quaternion representing position, $$a$$, $$b$$, $$c$$ and $$d$$ - some complex numbers, and $$ad - bc = 1$$. Remember that quaternion multiplication is non-commutatiove. 
+where $$\mathbf{q}$$ is a quaternion representing position, $$a$$, $$b$$, $$c$$ and $$d$$ - some complex numbers which satisfy $$ad - bc = 1$$. Remember that quaternion multiplication is non-commutative.
 
 We can also write this transformation in matrix form:
 
 $$
-f(\vec{q}) =
+f(\mathbf{q}) =
 \begin{bmatrix}
 a & b \\
 c & d
 \end{bmatrix}
-\vec{q}
+\mathbf{q}
 $$
 
 Interestingly, we can consider the composition of Möbius transformations as the matrix product.
@@ -85,4 +85,24 @@ Now let's write down our basic transformations as Möbius transformations:
 
 We also need to have a derivative of the transformation, e.g. to apply the transformation to direction rather than point. The [derivation of quaternionic functions](https://en.wikipedia.org/wiki/Quaternionic_analysis#The_derivative_for_quaternions) isn't easy because of their non-commutativity, and also the derivative is direction-dependent.
 
+The derivative of quaternionic function $$f$$ at the point $$\mathbf{p}$$ along the direction $$\mathbf{v}$$:
 
+$$
+\frac{d f(\mathbf{q})}{d \mathbf{q}} \circ \mathbf{v} = \lim_{\varepsilon \to 0} \frac{f(\mathbf{q} + \varepsilon \mathbf{v}) - f(\mathbf{q})}{\varepsilon} 
+$$
+
+Substituting our Möbius transformation for $$f$$ and slightly simplifying the formula we get:
+
+$$
+\mathbf{P} = a \mathbf{q} + b
+$$
+
+$$
+\mathbf{Q} = c \mathbf{q} + d
+$$
+
+$$
+\frac{d f(\mathbf{q})}{d \mathbf{q}} \circ \mathbf{v} = a \mathbf{v} \mathbf{Q}^{-1} + \mathbf{P} (\overline{(c \mathbf{v})} - 2 [\mathbf{Q} \cdot (c \mathbf{v})] \mathbf{Q}^{-1}) |\mathbf{Q}|^{-2}
+$$
+
+where $$\overline{\mathbf{x}}$$ is quaternionic conjugation, and $$[\mathbf{x} \cdot \mathbf{y}]$$ is dot product of two quaternions as if they were 4-dimensional vectors.
