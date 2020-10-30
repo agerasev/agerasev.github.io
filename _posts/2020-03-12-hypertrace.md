@@ -2,8 +2,10 @@
 layout: post
 title:  "Lobachevsky (hyperbolic) space ray tracer"
 image:  /assets/posts/hypertrace/preview.png
-date:   2020-04-14 13:54:10 +0700
+date:   2020-03-12 16:00:00 +0700
 ---
+
+*The work on this article is in progress.*
 
 ## Theory
 
@@ -88,7 +90,7 @@ We also need to have a derivative of the transformation, e.g. to apply the trans
 The derivative of quaternionic function $$f$$ at the point $$\mathbf{p}$$ along the direction $$\mathbf{v}$$:
 
 $$
-\frac{d f(\mathbf{q})}{d \mathbf{q}} \circ \mathbf{v} = \lim_{\varepsilon \to 0} \frac{f(\mathbf{q} + \varepsilon \mathbf{v}) - f(\mathbf{q})}{\varepsilon} 
+\frac{d f(\mathbf{q})}{d \mathbf{q}} \circ \mathbf{v} = \lim_{\varepsilon \to 0} \frac{f(\mathbf{q} + \varepsilon \mathbf{v}) - f(\mathbf{q})}{\varepsilon}
 $$
 
 Substituting our Möbius transformation for $$f$$ and slightly simplifying the formula we get:
@@ -106,3 +108,5 @@ $$
 $$
 
 where $$\overline{\mathbf{x}}$$ is quaternionic conjugation, and $$[\mathbf{x} \cdot \mathbf{y}]$$ is dot product of two quaternions as if they were 4-dimensional vectors.
+
+## To be continued ...
