@@ -10,7 +10,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 3.9.0"
 
-gem "kramdown", "~> 2.3.0"
+gem "kramdown", "~> 2.3.1"
 gem "kramdown-parser-gfm", "~> 1.1.0"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
