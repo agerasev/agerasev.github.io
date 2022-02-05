@@ -16,3 +16,10 @@ bundler config set path 'vendor/bundle'
 bundler install
 bundler exec jekyll serve 
 ```
+
+# Update standalone assets
+
+```bash
+npm install
+./copy-npm-assets.sh
+```
