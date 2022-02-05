@@ -1,15 +1,16 @@
 ---
 layout: single
-title:  "Simple 3D vehicle physics simulator"
-image:  /assets/posts/vehicle-physics/preview.png
-date:   2013-02-15 05:34:50 +0800
+title: "Simple 3D vehicle physics simulator"
+header:
+  teaser: /assets/posts/vehicle-physics/preview.png
+date: 2013-02-15 05:34:50 +0800
 ---
 
 I worked on this toy project in the winter between 2012 and 2013. This was my first year in Novosibirsk State University. I studied calculus, linear algebra and mechanics, and I tried to apply some new knowledge I learnt. I already tried to learn C++ and OpenGL by myself.
 
 ## Video
 
-{% include youtube_player.html id="7S7wDXqOB8Y" %}
+{% include video id="7S7wDXqOB8Y" provider="youtube" %}
 
 ## Source
 

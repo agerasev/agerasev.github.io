@@ -4,9 +4,7 @@ title: "Ray tracer in Rust and OpenCL"
 header:
   teaser: /assets/posts/clay-ray-tracer/preview.png
 date: 2019-09-24 16:00:00 +0700
-classes: wide
 toc: true
-toc_label: "Table of content"
 ---
 
 This post is about my attempt to write a simple physically-based Monte-Carlo ray tracing engine in Rust and OpenCL. It is aimed to be a convenient framework for toy experiments with ray tracing, so the main goals was modularity and extendability, and also performance was taken into account. Here is the [main page of the project](https://clay-rs.github.io).
@@ -23,7 +21,7 @@ A few months ago I decided to implement a ray tracer in Rust. This decision was 
 
 I've already implemented some kind of ray tracing engine while trying to render parametric surfaces like biquadratic Bezier patches ([source code](https://github.com/agerasev/cltracer)). It is written in C++ and OpenCL and is quite fast - it renders a scene of sufficient quality in real-time (around 100 samples per pixel per second for 800x600 pixels on GTX 970). Here is the video rendered by it:
 
-{% include youtube_player.html id="Fz5wcgmms_Q" %}
+{% include video id="Fz5wcgmms_Q" provider="youtube" %}
 
 But this ray tracing engine is very specialized for its current task and it would be quite painful to adapt it for a new one.
 

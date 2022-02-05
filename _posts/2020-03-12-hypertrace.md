@@ -1,9 +1,12 @@
 ---
 layout: single
-title:  "Lobachevsky (hyperbolic) space ray tracer"
-image:  /assets/posts/hypertrace/preview.png
-date:   2020-03-12 16:00:00 +0700
+title: "WIP: Lobachevsky (hyperbolic) space ray tracer"
+header:
+  teaser: /assets/posts/hypertrace/preview.png
+date: 2020-03-12 16:00:00 +0700
 ---
+
+{% include video id="LGWusRNcJ6A" provider="youtube" %}
 
 *The work on this article is in progress.*
 

@@ -1,9 +1,16 @@
 main:
   - title: "About me"
-    url: /about
+    url: /about/summary
 
 docs:
   - title: "Posts"
-    url: "/"
+    url: /
   - title: "About me"
-    url: "/about"
+    url: /about/summary
+    children:
+      - title: "Summary"
+        url: /about/summary
+      - title: "Education"
+        url: /about/education
+      - title: "Projects"
+        url: /about/projects
