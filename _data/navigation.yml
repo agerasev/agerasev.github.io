@@ -1,0 +1,9 @@
+main:
+  - title: "About me"
+    url: /about
+
+docs:
+  - title: "Posts"
+    url: "/"
+  - title: "About me"
+    url: "/about"

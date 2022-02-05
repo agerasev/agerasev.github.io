@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Lobachevsky (hyperbolic) space ray tracer"
 image:  /assets/posts/hypertrace/preview.png
 date:   2020-03-12 16:00:00 +0700

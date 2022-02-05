@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Simple 3D vehicle physics simulator"
 image:  /assets/posts/vehicle-physics/preview.png
 date:   2013-02-15 05:34:50 +0800

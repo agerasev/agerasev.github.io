@@ -1,17 +1,15 @@
 ---
-layout: post
-title:  "Ray tracer in Rust and OpenCL"
-image:  /assets/posts/clay-ray-tracer/preview.png
-date:   2019-09-24 16:00:00 +0700
+layout: single
+title: "Ray tracer in Rust and OpenCL"
+header:
+  teaser: /assets/posts/clay-ray-tracer/preview.png
+date: 2019-09-24 16:00:00 +0700
+classes: wide
+toc: true
+toc_label: "Table of content"
 ---
 
 This post is about my attempt to write a simple physically-based Monte-Carlo ray tracing engine in Rust and OpenCL. It is aimed to be a convenient framework for toy experiments with ray tracing, so the main goals was modularity and extendability, and also performance was taken into account. Here is the [main page of the project](https://clay-rs.github.io).
-
-## Table of content
-{:.no_toc}
-
-+ Table of content
-{:toc}
 
 ## Preface
 
