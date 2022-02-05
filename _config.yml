@@ -48,6 +48,9 @@ defaults:
       sidebar:
         nav: "docs"
 
+head_scripts:
+  - /assets/mathjax/tex-chtml.js
+
 # Build settings
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "dark"
